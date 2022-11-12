@@ -107,7 +107,13 @@ header a:hover{
 
 #somos-proya .container{
     text-align: center;
-    padding: 200px 12px;
+    padding: 140px 12px;
+}
+#imagen{
+    flex-direction: row;
+    width: 500px;
+    height: 400px;
+    border-radius: 50px;
 }
 
 #nuestros-programas{
@@ -150,9 +156,31 @@ header a:hover{
     background-image: url(media/OIP.jpg);
 }
 
+#caracteristicas{
+
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
+}
 #caracteristicas .container{
-    text-align: center;
-    padding: 200px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#caracteristicas .img-list{
+    width: 50vh ;
+    margin: 0;
+    padding: 0px 30px;
+}
+
+#caracteristicas ul{
+    align-items: center;
+    padding-top: 80px;
+    margin: 0;
+
+    
 }
 
 #caracteristicas li{
@@ -201,7 +229,7 @@ footer .container{
 }
 
 
-@media (min-width: 720px) {
+@media (min-width: 900px) {
 
     header{
         position: fixed;
@@ -218,16 +246,110 @@ footer .container{
         padding-bottom: 0;
         padding-right: 20px;
     }
+    #hero h1{
+        font-size: 5em;
+    }
 
     #somos-proya .container{
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 250px 0px;
         
+        
+        
+    }
+    #somos-proya h2{
+        margin-top: 0;
+    }
+
+    #somos-proya .tex{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        max-width: 600px;
     }
 
     #imagen{
         flex-direction: row;
         width: 700px;
         height: 500px;
+        border-radius: 50px;
+    }
+    #nuestros-programas .container{
+        padding: 200px 0px;
     }
 
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+
+    }
+
+    nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .cartas{
+        padding: 15px;
+    }
+    #caracteristicas{
+       
+        padding: 0px 0px;
+    }
+
+    #caracteristicas .img-list{
+        margin: 0;
+        padding: 0px 0px 0px 0px;
+        border-radius: 20px;
+        width: 50%;
+        height: 50%;
+    }
+    #caracteristicas .container{
+        flex-direction: row;
+        justify-content:space-evenly;
+        padding: 100px 0px;
+    }
+
+    #caracteristicas ul{
+        margin: 0;
+        padding: 0px 0px;
+        padding-left: 80px;
+        border: 1px solid blue;
+        width: 40%;
+        text-align: initial;
+        
+
+        
+    }
+
+    #caracteriscas li{
+    
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex;
+    }
+
+    #caracteristicasok{
+        border: 1px solid pink;
+        margin-bottom: 30px;
+    }
+
+
 }
+
